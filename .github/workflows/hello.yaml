@@ -12,3 +12,12 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+      - name: Get current time
+        run: |
+          echo "The time is now $(date -u +%H:%M:%S)"
+      - name: List files
+        run: |
+          ls -a
+      - name: look calendar
+        run: |
+          cal
